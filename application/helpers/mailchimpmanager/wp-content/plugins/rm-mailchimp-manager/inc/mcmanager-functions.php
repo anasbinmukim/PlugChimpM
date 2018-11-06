@@ -32,7 +32,10 @@ function mcmanager_kses($data, $allowed_protocols = ''){
 	    'br' => array(),
 	    'em' => array(),
 	    'strong' => array(),
-			'p' => array(),
+			'p' => array(
+				'class' => array(),
+				'id' => array()
+			),
 			'div' => array(
 				'class' => array(),
 				'id' => array()

@@ -51,6 +51,7 @@ jQuery(document).ready(function($) {
         }
 
         if(check_required){
+          _this.find('.required-field-missing').delay(3000).fadeOut('slow');
           return false;
         }
 

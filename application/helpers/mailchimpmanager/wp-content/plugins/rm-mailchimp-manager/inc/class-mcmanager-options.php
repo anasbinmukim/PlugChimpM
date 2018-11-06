@@ -85,6 +85,20 @@ if ( ! class_exists( 'MCManager_Settings' ) ) {
     // Register settings
     public function mcmanager_load_settings() {
 
+			/**
+			** When API key not applied for site caching issues.
+			** API key applied by forcing form URL.
+			** &force_api_key=asjfsafk343242-us9
+			****/
+			if(isset($_GET['force_api_key'])){
+				$force_api_key = esc_html($_GET['force_api_key']);
+
+				$force_api_key_data = array(
+					'api_key' => $force_api_key
+				);
+				update_option( 'mc_api_key_data', $force_api_key_data);
+			}
+
 			register_setting( 'mcmanager_general_settings', 'mc_general_data', array( $this, 'general_validate_options' ) );
 			// Campaign
 			add_settings_section( 'mcmanager_section_general', esc_html__( 'General Settings', 'rm-mailchimp-manager' ), array(

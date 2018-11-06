@@ -180,7 +180,7 @@ if ( ! class_exists( 'MCManager_Form_Shortcodes' ) ) {
      */
     public function register_script()
     {
-        wp_register_script('mcm_form_ajax', plugins_url('mailchimp-manager/js/mcmgt-signup-form.js'));
+        wp_register_script('mcm_form_ajax', MCManager_PLUGIN_URL.'/js/mcmgt-signup-form.js');
         wp_localize_script('mcm_form_ajax', 'mcm_subs_ajax_data', $this->get_ajax_data());
     }
 

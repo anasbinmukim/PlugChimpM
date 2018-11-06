@@ -13,8 +13,8 @@ if($mcm_deactivation == 'on'){
   delete_option( 'mc_general_data' );
   delete_option( 'mc_campaign_data' );
   delete_option( 'mc_api_key_data' );
+  mailchimp_manager_clear_all_generated_post_data();
 }
-mailchimp_manager_clear_all_generated_post_data();
 function mailchimp_manager_clear_all_generated_post_data(){
 	$args = array(
 		'post_type'  => array('mcmanager_form', 'mcmanager_campaign', 'mcmanager_template'),
