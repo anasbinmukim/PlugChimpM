@@ -78,6 +78,13 @@ No problem, contact with us [here](https://mailchimpmanager.com/).
 
 == Changelog ==
 
+= 1.0.2 – 2018-11-07 =
+* Force api key settings when site have caching.
+* Fix form js in front end
+* Enable css class for p in form editor.
+* Fix deactivation default data cleanup
+
+
 = 1.0.1 – 2018-10-26 =
 * Latest compatibility check
 

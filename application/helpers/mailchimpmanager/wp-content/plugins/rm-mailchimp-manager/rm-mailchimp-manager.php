@@ -5,7 +5,7 @@ Plugin Name: MailChimp Manager
 Plugin URI: https://mailchimpmanager.com/
 Description: MailChimp Manager plugin manage subscriber, list, campaigns, campaign templates from wordpress admin. Add your site multiple subscription form in various way to get more and more subscribers.
 Author: MCManager Team
-Version: 1.0.1
+Version: 1.0.2
 Author URI: https://rmweblab.com/
 Copyright: © 2018 - 2018 RM Web Lab.
 License:     GPL2
